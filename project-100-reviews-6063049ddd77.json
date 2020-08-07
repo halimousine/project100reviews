@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "project-100-reviews",
+  "private_key_id": "6063049ddd7714b935fdfa7e8678e64a198ef6b8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9vNV5RXIB16oi\nW0qXq1M+diXs0DTFFClUNCpUX5rfgTvWY8XtImV412vzd0tCcuvaoU650bdu6Gi/\ntVspBs+cFhYkllxUj9pkBVXMK111DfWIqKpoUKN92jilrP/btu0k9H4CjbillLNv\nyviAkXOFQSkahMehrdS9mtTk/cuCsmhJXheACT13Rn5NpKkuQGbzoQ6gDt4M0yc/\nPe/ouG+GgTNb1biL/sywGQGOFoWWX5hCRwmW1aLKG2QLMH+r9/yuRxvUAPzf9UPN\nCob2eax6hELv75VepO2qyB28VNGFxC7HJdiROtezqvz1ly+tms+Dv49hEDx/82Mk\njTqEIkgNAgMBAAECggEAJZuOPJFVPaQ/prutl05wG4tTjRLfwshyQKxuT3b7vZ1h\n/OadzpjowAEC9qkIk80vjpA2iIJW93a9fHI39XPSJsAB95KODnzM7tJX5TYbOh5g\nMowr6q1BGqrsW3pk5Gnnq1GCwILSvI8y2c/DXch2u0zlFsqGvzczWbmcxR7A/dCD\nI+/09fs1s0CsBOZylQzpq9cdXJiF/TipMufLAkx58nzOvmfGkCWJ4iAFBS1cjk2J\nK0+JjvAHK8Qzi6s7jgbkPxdqDkukZQ2qIJIw6fOEbEztAt8CPSTRU6UVT662pMM4\nRz5kADx5lxDd9b/mo6C8i4Yv4pWF9WlYP4DG9liCSQKBgQD0GxT6NR7TEHbRFaNJ\nxq1tThdSLlxSQj/t++PfR5V52SpEjsnNWhSkzirn7nFXwsV+fBLuZH/m7lDIj1zK\n5Q5uq7G7K4kL88+keoitD+lAkeb9qixxA15Xy4eo3vFIUgpaTBL3ePwEUPX2USyN\nlEzaZPvglLs2XEQ83cd7zdkeAwKBgQDG+5ONMV8XEb8Y6KdmCUOeYt80EvxRvPbR\nIytwU7xblctC7Y27gSL91VvPBuejSikHllcCwAAVQXR1ugw+EuVAy+vzFxy4qeOo\nbCj7C7lTrAvh6VV3wWsdIpB9SNVcHydsI+oFWBaWJNERtKiBybLbOCwu9dkDjxqF\nwxs6DwTsrwKBgQDg3iHQ7CZdIImTym8Fg3Q3gPySxApf7I+f167u/K6B9L+vMCpO\ndXEW8KUtysW2psHv5rQ5z3LTdS4N06MTdTZ6VMgBN/WjgRIC3q4RXtrslHtJqf4O\njZ/XGLL7qYRzrr/CttmyB02BXGN4aQa11auGdAhjth9P0Gc7+sHNFq+vqQKBgQCr\n1IA8w0/MSiTty6sTMBjWY6c//s0pgLbbLzXJ0GWt6RMX/rAQJZoj/OVFSD8sAVSh\nGrCUzVzE/jsllr4PtJ2IcRCWYXUJ+pt/y7cv45XsrXutYKPPwJVRGZIQvp6Q6M5Q\nUks6xjDrA2wPkCSbv6PWLxHok6ENs7xBmpSedG3aPQKBgEJfQJaITVQEsHD9lDPi\nF6M0NLpFSMR/L9O0XUM43Nl32DYb9/nWWS1ESGWMsFJuT1jt2AqSP/N0EVv7HrZi\nDvQvORorxjcUignNv56mVBvN6N38Z8ci5UWGgvzJ6pQA7JrUkF1rbZrqNQN7mFG2\nI1mmauHx1lHen+cGnDhjWXTo\n-----END PRIVATE KEY-----\n",
+  "client_email": "andi-halim@project-100-reviews.iam.gserviceaccount.com",
+  "client_id": "106451530495902272804",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/andi-halim%40project-100-reviews.iam.gserviceaccount.com"
+}
