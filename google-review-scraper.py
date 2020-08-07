@@ -14,7 +14,6 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
@@ -26,8 +25,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 creds = ServiceAccountCredentials.from_json_keyfile_name('project-100-reviews-6063049ddd77.json', scope)
 client = gspread.authorize(creds)
-def GetSpreadsheetData(sheetNameurl, worksheetIndex): 
-    sheet = client.open_by_url(sheetNameurl).get_worksheet(worksheetIndex) 
+def GetSpreadsheetData(sheetNameurl, worksheetIndex):
+    sheet = client.open_by_url(sheetNameurl).get_worksheet(worksheetIndex)
     return sheet.get_all_values()[1:]
 
 
@@ -41,7 +40,7 @@ spreadsheet = GetSpreadsheetData('https://docs.google.com/spreadsheets/d/13Tg3hM
 # In[19]:
 
 
-spreadsheet_df = pd.DataFrame(spreadsheet, columns=['form_timestamp', 'full_name', 'email', 'group_name', 'business_name1', 
+spreadsheet_df = pd.DataFrame(spreadsheet, columns=['form_timestamp', 'full_name', 'email', 'group_name', 'business_name1',
                                                     'visit_date1', 'reviewurl', 'cocoapreneursubmit', 'pledge'])
 google_df = spreadsheet_df[spreadsheet_df['reviewurl'].str.contains('https://goo\.gl/maps/.*')]
 
@@ -79,7 +78,7 @@ def get_review(content_arr):
 #reviewer name and business name
 def get_review_names(content_arr):
     reviewer_name0, business_name0 = [], []
-    for c in content_arr: 
+    for c in content_arr:
         match = re.findall(r'Google review of (.*?) by (.*)', c)
         if match != []:
             reviewer_name0.append(match[0][0])
@@ -114,8 +113,8 @@ reviews_df0.head()
 
 
 reviews_df = google_df.merge(reviews_df0, on="reviewurl")[['form_timestamp','full_name', 'reviewer_name','email','group_name',
-                                                           'business_name1', 'business_name2','visit_date1', 
-                                                           'review_platform','reviewurl','review_desc', 'star_rating', 
+                                                           'business_name1', 'business_name2','visit_date1',
+                                                           'review_platform','reviewurl','review_desc', 'star_rating',
                                                            'cocoapreneursubmit','pledge']]
 reviews_df
 
@@ -127,7 +126,3 @@ reviews_df.to_csv('googlereviews_df.csv', index=False)
 
 
 # In[ ]:
-
-
-
-

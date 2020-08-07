@@ -11,7 +11,7 @@ import matplotlib.dates as mdates
 import sklearn
 import numpy as np
 import datetime as dt
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+#from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import plotly.graph_objects as go
 
 
@@ -30,8 +30,8 @@ mergedf.head()
 # In[3]:
 
 
-#visualizations : top 5 reviewers, top 5 businesses, google maps api location of businesses, visit_date time series, 
-#review_desc word cloud, overall star rating, current pledge count, total cocoapreneur providers. 
+#visualizations : top 5 reviewers, top 5 businesses, google maps api location of businesses, visit_date time series,
+#review_desc word cloud, overall star rating, current pledge count, total cocoapreneur providers.
 
 
 # In[4]:
@@ -91,13 +91,13 @@ def timeseries(df, group):
 def dashboardtimeseries(merge_df):
     for group in list(mergedf['group_name'].unique()):
         print(group)
-        groupdf = mergedf[mergedf['group_name']==group]       
+        groupdf = mergedf[mergedf['group_name']==group]
         timeseries(groupdf, group)
 
 
 # In[356]:
 
-
+'''
 def review_wordcloud(df, group):
     words1 = ""
     for s in df[df['group_name']==group]['review_desc']:
@@ -105,17 +105,17 @@ def review_wordcloud(df, group):
     plt.figure(figsize=(8,8))
     wordcloud = WordCloud(stopwords=STOPWORDS, max_font_size=30, max_words=100, background_color="white").generate(words1)
     plt.imshow(wordcloud, interpolation='bilinear')
-
+'''
 
 # In[7]:
 
-
+'''
 def dashboardwordcloud(merge_df):
     for group in list(mergedf['group_name'].unique()):
         print(group)
-        groupdf = mergedf[mergedf['group_name']==group]       
+        groupdf = mergedf[mergedf['group_name']==group]
         review_wordcloud(groupdf, group)
-
+'''
 
 # In[357]:
 
@@ -136,12 +136,10 @@ def avgrating(df, group):
 def dashboardstars(merge_df):
     for group in list(mergedf['group_name'].unique()):
         print(group)
-        groupdf = mergedf[mergedf['group_name']==group]       
+        groupdf = mergedf[mergedf['group_name']==group]
         avgrating(groupdf, group)
 
 
 # In[ ]:
-
-
-
-
+dashboardtop5(mergedf)
+dashboardtimeseries(mergedf)
