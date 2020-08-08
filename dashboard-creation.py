@@ -43,8 +43,7 @@ def top5reviewers(df, group):
     ax.set(xlabel="Reviewer Name", ylabel="Count", title="Top 5 Reviewers of "+str(group))
     ax.plot()
     plt.show()
-
-
+    plt.savefig("top5reviewers"+group+".png")
 # In[5]:
 
 
@@ -56,8 +55,7 @@ def top5businesses(df, group):
     plt.xticks(rotation=45)
     ax.plot()
     plt.show()
-
-
+    plt.savefig("top5businesses"+group+".png")
 # In[ ]:
 
 
@@ -80,14 +78,12 @@ def timeseries(df, group):
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
     ax.xaxis.set_minor_formatter(mdates.DateFormatter("%Y-%m-%d"))
     ax.set(xlabel="Date", ylabel="Count", title=str(group)+" Review Activity")
-    plt.ylim(0)
+    plt.ylim(bottom=0)
     plt.xticks(rotation=60)
     plt.show()
-
+    plt.savefig("timeseries"+group+".png")
 
 # In[6]:
-
-
 def dashboardtimeseries(merge_df):
     for group in list(mergedf['group_name'].unique()):
         print(group)
